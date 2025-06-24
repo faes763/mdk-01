@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState } from 'react'
-import Image from "next/image";
 import { ConsultationDialog } from '../components/ConsultationDialog'
 import { Button } from '../components/ui/button'
 import { Input } from '../components/ui/input'
@@ -147,7 +146,7 @@ export default function HomePage() {
                 </div>
                 <h4 className="font-semibold text-lg mb-1">{review.name}</h4>
                 <p className="text-sm text-muted-foreground mb-3">{review.position}</p>
-                <p className="text-muted-foreground">"{review.text}"</p>
+                <p className="text-muted-foreground">{review.text}</p>
               </div>
             ))}
           </div>
